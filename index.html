@@ -154,7 +154,7 @@
       <span class="eyebrow">THE $1 WEDDING EXPERIMENT</span>
       <h1>Can the internet help fund a wedding one dollar at a time?</h1>
       <p class="sub">
-        Weâre getting married, and weâre trying something simple: asking people who enjoy the idea to chip in exactly $1.
+        We're getting married, and we're trying something simple: asking people who enjoy the idea to chip in exactly $1.
       </p>
       <div class="cta-row">
         <a class="btn primary" href="https://venmo.com/u/kyle-comstock-404" target="_blank" rel="noopener">Send $1 on Venmo</a>
@@ -163,7 +163,7 @@
     </section>
 
     <section class="card">
-      <h2>Thatâs really it.</h2>
+      <h2>That's really it.</h2>
       <p>
         No complicated fundraiser. No giant ask. Just one dollar from anyone who thinks this experiment is fun and wants to be a tiny part of our wedding story.
       </p>
@@ -181,7 +181,7 @@
       </p>
 
       <!-- Replace action="#" with your MailerLite/Brevo form action URL before publishing -->
-      <form action="https://formcarry.com/s/YhGdHQwXo3n" method="post">
+      <form action="#" method="post" onsubmit="return signupPlaceholder(event)">
         <input type="email" name="email" placeholder="you@example.com" required />
         <button type="submit">Join the update list</button>
       </form>
@@ -202,6 +202,12 @@
   </main>
 
   <script>
+    function signupPlaceholder(e){
+      e.preventDefault();
+      alert("The page design is ready. Connect this form to MailerLite or Brevo before publishing so signups are actually collected.");
+      return false;
+    }
+
     async function sharePage(){
       const data = {
         title: "The $1 Wedding Experiment",
